@@ -1,0 +1,18 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+    - { resource: services.yml }
+    - { resource: 'local/' }
+    - { resource: workflow.yml }
+
+
+pimcore:
+    objects:
+        class_definitions:
+            data:
+                map:
+                    blueFactorySelect: \AppBundle\CoreExtension\BlueFactorySelect
+
+framework:
+
+
